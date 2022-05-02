@@ -1,0 +1,20 @@
+https://www.malekal.com/comment-bloquer-mise-a-jour-vers-windows-11-depuis-pc-windows-10/?msclkid=58564378c7a211ec9e46749045851bc6
+
+
+regedit 
+Naviguer vers HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
+
+Si les clés n’existent pas, créez-les en cliquant avec le bouton droit de la souris sur la touche précédente et en sélectionnant la touche nouvelle> 
+dans le menu contextuel.
+
+Cliquez avec le bouton droit sur WindowsUpdate et sélectionnez Nouveau> Valeur DWORD (32 bits)
+
+
+Nommez la valeur en TargetReleaseVersion.
+Puis double-cliquez sur le nouveau DWORD et définissez-le sur 1.
+
+Cliquez avec le bouton droit de la souris sur WindowsUpdate et sélectionnez Nouveau> Valeur chaîne
+
+Nommez la valeur en TargetReleaseVersionInfo.
+Double-cliquez sur la nouvelle chaîne et réglez-le sur 21h1
+Enfin redémarrez le PC our prendre en compte les modifications
