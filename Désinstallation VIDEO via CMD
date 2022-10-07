@@ -1,0 +1,24 @@
+https://www.thewindowsclub.com/how-to-uninstall-driver-using-command-prompt
+
+Press Win+I to open Windows Settings.
+Go to System > Recovery.
+Click on the Restart now button.
+Choose Troubleshoot > Advanced options > Command Prompt.
+Enter c: in the Command Prompt.
+Enter this command: dism /image:c:\ /get-drivers
+Note down the Published Name.
+Enter this command: dism /image:c:\ /remove-driver /driver:oem0.inf
+
+
+
+dism /image:c:\ /get-drivers
+
+dism /image:c:\ /remove-driver /driver:oem0.inf
+
+How do I check my drivers in Command Prompt?
+To check your drivers in Command Prompt, you need to use 
+
+dism /image:e:\ /get-driverinfo /driver:oem0.inf c
+
+ommand, where oem0.inf is the Published Name of the driver. You can do that in the Windows Recovery Environment.
+
