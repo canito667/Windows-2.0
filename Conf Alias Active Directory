@@ -1,0 +1,17 @@
+Source .
+https://techgenix.com/add-an-email-alias-using-attribute-editor-in-microsoft-365/
+
+configurar la vista en avanzada en la consola User de AD
+
+en las propiedades del utilisador 
+
+ir a
+
+Àttribute Edito --> ProxyAddresses 
+
+agregar el alias con el formato : smtp:user@dominio.XXX
+
+para forzar la syncrho, lanzar una consola PS
+
+                            Start-ADSyncSyncCycle -PolicyType Delta
+
