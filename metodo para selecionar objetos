@@ -1,0 +1,20 @@
+$employes = @( 
+            [pscustomobject]@{Name='Jonny';Gender='Male';Age='27'}
+            [pscustomobject]@{Name='patricio';Gender='Male';Age='33'}
+            [pscustomobject]@{Name='Maria';Gender='Female';Age='55'}
+            )
+
+
+# Llamar objetos de una matris
+
+# Metodo 1
+
+$employes | Select-Object -ExpandProperty Name
+
+# Metodo 2
+
+$employes.Name
+
+# Metodo 3
+
+$employes | %{$_.name}
