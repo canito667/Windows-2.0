@@ -1,7 +1,0 @@
-Je rajoute mes collègues dans l’échange.
-Il semble qu’il reste des éléments de la syncrho OneDrive liés au tenant source.
-Pourriez-vous essayer de supprimer les données présentes dans les dossiers suivants :
-
-
-•	%localappdata%/Microsoft/OneAuth
-•	%localappdata%/Microsoft/IdentityCache
